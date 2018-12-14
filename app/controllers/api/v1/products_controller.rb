@@ -40,7 +40,6 @@ class Api::V1::ProductsController < ApplicationController
 
   # Search product by name
   def search_product
-    puts "hello here is search product method"
     @product = Product.find_by(name: params[:name])
     render json: @product
   end

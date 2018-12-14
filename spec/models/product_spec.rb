@@ -28,5 +28,11 @@ RSpec.describe Product, type: :model do
       subject.name = nil
       expect(subject).to_not be_valid
     end
+
+    it "should has a unique name" do
+      older_product = Product.create({name: "TV"})
+      product = Product.create({name: older_product.name})
+      expect(product).to_not be_valid
+    end
   end
 end

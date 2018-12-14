@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 # Product.create(name: "Smart Tv")
 
-98.times do |n|
-    name = Faker::Commerce.unique.product_name 
+99.times do |n|
+    name = Faker::Commerce.unique.product_name
     Product.create!( name: name )
     end
