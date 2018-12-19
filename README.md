@@ -20,4 +20,4 @@ Task Requirements:
 - Run `rails db:seed`
 - Run server `rails s`
 - Use Postman or whatever the tool to test the api.
-- Search endpoint is `/api/v1/products/search_product?name="Prodcut name"`
+- Search endpoint is `/api/v1/products/search_product?name="Product name"`
